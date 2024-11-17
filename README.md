@@ -31,9 +31,9 @@ Proses convolution adalah langkah awal dalam CNN yang mengubah gambar menjadi un
 ### Fungsi ReLU (Rectified Linear Unit):
 - Setelah convolution, ReLU digunakan untuk mengurangi linearitas dengan menghilangkan nilai negatif dari feature map, membuat data lebih mudah dioptimalkan.
 
-![image](https://github.com/user-attachments/assets/a7d058ec-cda1-4882-a82c-b93e307deed9)
-![image](https://github.com/user-attachments/assets/d2f4c80a-a0eb-4169-9e84-b67225cb3761)
-![image](https://github.com/user-attachments/assets/12d72a6f-0498-4029-bc5a-e2835c141095)
+![image](https://github.com/user-attachments/assets/252c50bd-2264-4dea-8324-32945442c0a3)
+![image](https://github.com/user-attachments/assets/1b8aba38-7aa0-4450-9db1-6938fe58bc11)
+![image](https://github.com/user-attachments/assets/4445bc00-bd6c-48f3-9072-5cb23cc27c3e)
 
 ## 2. Max Pooling
 Pooling bertujuan mempertahankan fitur penting sambil mengurangi sensitivitas terhadap perubahan pada gambar.
