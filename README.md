@@ -1,7 +1,8 @@
-# CNN-AI-2208107010030
+# Review CNN
 
 Convolutional Neural Networks (CNN) adalah teknik dalam deep learning yang digunakan untuk pengenalan visual, seperti mengenali objek dalam gambar atau video.
-Aplikasi CNN antara lain:
+
+*Aplikasi CNN antara lain:*
 - Facebook: Otomatis menandai wajah teman atau keluarga.
 - CCTV: Mendeteksi wajah secara online dan real-time.
 
@@ -19,8 +20,9 @@ Hasil output dari CNN dapat berupa:
 Berikut adalah tahapan Convolutional Neural Network:
 ![image](https://github.com/user-attachments/assets/1d31828d-9e9c-470b-ae5d-754e13a7491d)
 
-1. Convolution
+## 1. Convolution
 Proses convolution adalah langkah awal dalam CNN yang mengubah gambar menjadi unit pixel menggunakan matriks yang disebut feature detector (juga dikenal sebagai kernel atau filter).
+
 Proses:
 - Gambar awal, misalnya berukuran 7x7, dikonversi dengan feature detector berukuran 3x3 untuk menghasilkan feature map berukuran lebih kecil (5x5).
 - Setiap elemen pixel pada gambar dikalikan dengan elemen dalam feature detector, lalu dijumlahkan.
@@ -33,8 +35,9 @@ Fungsi ReLU (Rectified Linear Unit):
 ![image](https://github.com/user-attachments/assets/20441b05-b339-4ba9-8e62-125eb82b9e90)
 ![image](https://github.com/user-attachments/assets/12d72a6f-0498-4029-bc5a-e2835c141095)
 
-2. Max Pooling
+## 2. Max Pooling
 Pooling bertujuan mempertahankan fitur penting sambil mengurangi sensitivitas terhadap perubahan pada gambar.
+
 Proses:
 - Dari kelompok pixel (misalnya, ukuran 2x2), hanya nilai maksimum yang dipilih untuk dimasukkan ke dalam layer baru.
 - Pooling mengurangi ukuran feature map hingga 75% dengan menggeser pixel sebanyak 2 kolom atau baris untuk menghindari redundansi data.
@@ -51,8 +54,9 @@ Contoh: Dalam gambar kucing dengan berbagai posisi, max pooling membantu mengena
 ![image](https://github.com/user-attachments/assets/b6f92ebf-189f-4247-a937-ae7235eeb80c)
 ![image](https://github.com/user-attachments/assets/210c6997-96ca-4569-b648-9fc3a5b745ae)
 
-3. Flattening
+## 3. Flattening
 Proses flattening mengubah matriks dari pooling layer menjadi vektor satu dimensi.
+
 Proses:
 - Semua baris dari pooling layer digabung menjadi satu kolom.
 
@@ -63,8 +67,9 @@ Hasil flattening menjadi input untuk Artificial Neural Networks (ANN) di tahap s
 
 ![image](https://github.com/user-attachments/assets/3d4a9ec2-10d9-4074-ac68-9c037bca2536)
 
-4. Full Connection
+## 4. Full Connection
 Pada tahap ini, hasil flattening diproses dalam jaringan ANN yang terdiri dari input layer, hidden layer, dan output layer.
+
 Proses:
 - Setiap node di ANN terhubung dengan semua node di layer sebelumnya dan berikutnya.
 - Output layer berisi node sebanyak jumlah kategori yang akan diprediksi. Misalnya, jika terdapat dua kategori (kucing dan anjing), maka output layer memiliki dua node.
